@@ -35,3 +35,14 @@ npx skills@latest add lafin716/rhyme-skills -a <agent>  # claude-code, cursor, o
 ```bash
 npx skills@latest update
 ```
+
+## 릴리스 (maintainer)
+
+스킬을 수정하면 `.claude-plugin/plugin.json`의 `version`을 올린 뒤 push한다. 버전이 같으면 `claude plugin update`가 변경을 감지하지 못한다.
+
+- patch (`0.1.0 → 0.1.1`): 문구 수정, 버그 수정
+- minor (`0.1.x → 0.2.0`): 스킬 추가, 동작 변경
+
+## License
+
+[MIT](LICENSE)
