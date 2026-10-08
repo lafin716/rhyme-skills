@@ -1,0 +1,4 @@
+interface:
+  display_name: "rhymework"
+  short_description: "계획·진척 관리부터 병렬 구현, 통합·실제 환경 검증까지"
+  default_prompt: "$rhymework 요청한 결과를 만들어줘. 작업 규모와 저장소를 보고 필요한 계획·진척 관리·에이전트 구성·모델 선택·구현·검증을 스스로 판단하고, 승인된 개발환경의 배포·Smoke Test와 문서 갱신까지 완료해줘."
