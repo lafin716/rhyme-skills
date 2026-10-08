@@ -1,0 +1,17 @@
+{
+  "name": "rhyme",
+  "owner": {
+    "name": "lafin716",
+    "url": "https://github.com/lafin716"
+  },
+  "description": "lafin716's agent skills, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "rhyme-skills",
+      "source": "./",
+      "description": "Autonomous build orchestration skills (rhymework: planning, task decomposition, parallel agents, validation).",
+      "category": "engineering",
+      "keywords": ["engineering", "skills", "orchestration", "planning"]
+    }
+  ]
+}

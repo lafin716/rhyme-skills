@@ -1,0 +1,14 @@
+{
+  "name": "rhyme-skills",
+  "version": "0.1.0",
+  "description": "lafin716's agent skills: autonomous build orchestration with planning, task decomposition, parallel agents and validation.",
+  "author": {
+    "name": "lafin716",
+    "url": "https://github.com/lafin716"
+  },
+  "repository": "https://github.com/lafin716/rhyme-skills",
+  "keywords": ["engineering", "skills", "orchestration", "planning"],
+  "skills": [
+    "./skills/rhymework"
+  ]
+}

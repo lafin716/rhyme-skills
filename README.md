@@ -1,6 +1,6 @@
 # rhyme-skills
 
-개인 Claude Code 스킬 모음.
+개인 에이전트 스킬 모음.
 
 ## Skills
 
@@ -10,13 +10,28 @@
 
 ## 설치
 
+### Claude Code (plugin)
+
 ```bash
-git clone https://github.com/lafin716/rhyme-skills.git
-cp -R rhyme-skills/skills/rhymework ~/.claude/skills/
+claude plugin marketplace add lafin716/rhyme-skills
+claude plugin install rhyme-skills@rhyme
 ```
 
-또는 저장소를 계속 동기화하려면 심볼릭 링크를 사용:
+업데이트:
 
 ```bash
-ln -s "$(pwd)/rhyme-skills/skills/rhymework" ~/.claude/skills/rhymework
+claude plugin marketplace update rhyme
+claude plugin update rhyme-skills@rhyme
+```
+
+### 기타 에이전트 (skills CLI)
+
+```bash
+npx skills@latest add lafin716/rhyme-skills -a <agent>  # claude-code, cursor, opencode, codex, windsurf, amp ...; omit -a to choose
+```
+
+업데이트:
+
+```bash
+npx skills@latest update
 ```
