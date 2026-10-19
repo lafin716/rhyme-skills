@@ -1,0 +1,4 @@
+interface:
+  display_name: "upload-git"
+  short_description: "수정사항을 검토해 논리 단위로 커밋하고 푸시"
+  default_prompt: "$upload-git 작업 트리의 수정사항을 전부 검토해서 비밀 값·산출물은 빼고, 검증 후 논리 단위로 커밋하고 원격에 푸시해줘."

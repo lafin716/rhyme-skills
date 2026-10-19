@@ -1,0 +1,4 @@
+interface:
+  display_name: "show-link"
+  short_description: "스크린샷을 찍어 다른 기기에서 열 수 있는 링크로 공유"
+  default_prompt: "$show-link 방금 작업한 화면을 스크린샷으로 찍어서 휴대폰에서도 열 수 있는 링크(localhost·LAN·Tailscale)로 보여줘."

@@ -9,9 +9,17 @@
     {
       "name": "rhyme-skills",
       "source": "./",
-      "description": "Autonomous build orchestration skills (rhymework: planning, task decomposition, parallel agents, validation).",
+      "description": "Agent skills: rhymework (autonomous build orchestration), upload-git (commit & push), make-release (versioning, tags, GitHub releases), show-link (screenshot sharing links).",
       "category": "engineering",
-      "keywords": ["engineering", "skills", "orchestration", "planning"]
+      "keywords": [
+        "engineering",
+        "skills",
+        "orchestration",
+        "planning",
+        "git",
+        "release",
+        "screenshot"
+      ]
     }
   ]
 }

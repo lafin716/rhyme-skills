@@ -7,8 +7,13 @@
 | Skill | 설명 |
 |-------|------|
 | [rhymework](skills/rhymework/SKILL.md) | 소프트웨어 빌드 요청을 자율적으로 계획·분해·병렬 실행·검증까지 수행 (`/rhymework`) |
+| [upload-git](skills/upload-git/SKILL.md) | 작업 트리 수정사항을 검토해 비밀 값·산출물을 거르고, 검증 후 논리 단위로 커밋·푸시 (`/upload-git`) |
+| [make-release](skills/make-release/SKILL.md) | 커밋·검증 → 버전 파일 일괄 갱신 → 태그 푸시 → Release 워크플로 대기 → 릴리즈 노트 작성·공개 (`/make-release [버전\|patch\|minor\|major]`) |
+| [show-link](skills/show-link/SKILL.md) | 스크린샷·파일을 갤러리로 띄워 localhost·LAN·Tailscale 링크로 공유 (`/show-link`, macOS·Linux, `python3` 필요) |
 
 ## 설치
+
+플러그인으로 설치하면 Claude Code에서는 `/rhyme-skills:<skill>` 이름으로도 호출된다. 같은 이름의 스킬이 `~/.claude/skills/`나 프로젝트 `.claude/skills/`에 있으면 그쪽이 `/<skill>`을 차지하므로, 프로젝트 전용 절차(예: 특정 저장소의 릴리즈 방식)는 프로젝트 스킬이나 CLAUDE.md에 두면 된다.
 
 ### Claude Code (plugin)
 
