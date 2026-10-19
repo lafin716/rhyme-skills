@@ -29,7 +29,15 @@ claude plugin marketplace update rhyme
 claude plugin update rhyme-skills@rhyme
 ```
 
-### 기타 에이전트 (skills CLI)
+### 여러 에이전트에 한 번에 (skills CLI)
+
+Claude Code·Codex 등 여러 에이전트를 함께 쓰면 이 방식 하나로 관리하는 것을 권장한다. Claude Code에 플러그인과 skills CLI를 둘 다 설치하면 같은 스킬이 두 번(`/upload-git`, `/rhyme-skills:upload-git`) 잡히므로 한쪽만 쓴다.
+
+```bash
+npx skills@latest add lafin716/rhyme-skills -g -s '*' -y -a claude-code codex  # 필요한 에이전트 나열
+```
+
+프로젝트 단위로만 설치하려면 `-g`를 뺀다:
 
 ```bash
 npx skills@latest add lafin716/rhyme-skills -a <agent>  # claude-code, cursor, opencode, codex, windsurf, amp ...; omit -a to choose
@@ -38,7 +46,8 @@ npx skills@latest add lafin716/rhyme-skills -a <agent>  # claude-code, cursor, o
 업데이트:
 
 ```bash
-npx skills@latest update
+npx skills@latest update -g upload-git show-link make-release rhymework  # 이 저장소 스킬만
+npx skills@latest update -g                                               # 전역 스킬 전부
 ```
 
 ## 릴리스 (maintainer)
