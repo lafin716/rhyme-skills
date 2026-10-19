@@ -1,0 +1,4 @@
+interface:
+  display_name: "show-dev"
+  short_description: "개발 서버를 Tailscale 주소로 열고 허용 호스트 설정까지"
+  default_prompt: "$show-dev 이 저장소의 개발 서버를 휴대폰·다른 기기에서 접속할 수 있게 Tailscale 주소로 열어줘. 허용 호스트 오류가 나지 않게 설정도 고쳐줘."

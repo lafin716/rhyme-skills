@@ -9,7 +9,7 @@
     {
       "name": "rhyme-skills",
       "source": "./",
-      "description": "Agent skills: rhymework (autonomous build orchestration), upload-git (commit & push), make-release (versioning, tags, GitHub releases), show-link (screenshot sharing links).",
+      "description": "Agent skills: rhymework (autonomous build orchestration), upload-git (commit & push), make-release (versioning, tags, GitHub releases), show-link (screenshot sharing links), show-dev (open the dev server on Tailscale).",
       "category": "engineering",
       "keywords": [
         "engineering",
@@ -18,7 +18,9 @@
         "planning",
         "git",
         "release",
-        "screenshot"
+        "screenshot",
+        "tailscale",
+        "dev-server"
       ]
     }
   ]

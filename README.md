@@ -10,6 +10,7 @@
 | [upload-git](skills/upload-git/SKILL.md) | 작업 트리 수정사항을 검토해 비밀 값·산출물을 거르고, 검증 후 논리 단위로 커밋·푸시 (`/upload-git`) |
 | [make-release](skills/make-release/SKILL.md) | 커밋·검증 → 버전 파일 일괄 갱신 → 태그 푸시 → Release 워크플로 대기 → 릴리즈 노트 작성·공개 (`/make-release [버전\|patch\|minor\|major]`) |
 | [show-link](skills/show-link/SKILL.md) | 스크린샷·파일을 갤러리로 띄워 localhost·LAN·Tailscale 링크로 공유 (`/show-link`, macOS·Linux, `python3` 필요) |
+| [show-dev](skills/show-dev/SKILL.md) | 개발 서버를 Tailscale 주소(`*.ts.net`·100.x)로 열기 — 허용 호스트 설정 자동 추가, Tailscale 상태 하루 캐시, 없으면 대안 안내 (`/show-dev`, macOS·Linux) |
 
 ## 설치
 
@@ -46,7 +47,7 @@ npx skills@latest add lafin716/rhyme-skills -a <agent>  # claude-code, cursor, o
 업데이트:
 
 ```bash
-npx skills@latest update -g upload-git show-link make-release rhymework  # 이 저장소 스킬만
+npx skills@latest update -g upload-git show-link show-dev make-release rhymework  # 이 저장소 스킬만
 npx skills@latest update -g                                               # 전역 스킬 전부
 ```
 
