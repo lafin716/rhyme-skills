@@ -1,6 +1,6 @@
 # 프레임워크별 허용 호스트·바인딩 설정
 
-`<TS_IP>`는 `show-dev.sh check`의 `ip`. 모든 예시는 **기존 설정에 병합**한다(값이 이미 있으면 배열에 추가). 버전이 오래돼 해당 옵션이 없으면 그 버전에는 호스트 검사가 없는 것이므로 바인딩만 바꾼다 — 설정 키를 지어내지 말고, 확실하지 않으면 설치된 패키지의 타입 정의(`node_modules/<pkg>/**/*.d.ts`)나 문서로 확인한다.
+`<TS_IP>`는 `show-dev.sh urls` 출력의 Tailscale 100.x IP(Tailscale이 꺼져 있으면 생략). 모든 예시는 **기존 설정에 병합**한다(값이 이미 있으면 배열에 추가). 버전이 오래돼 해당 옵션이 없으면 그 버전에는 호스트 검사가 없는 것이므로 바인딩만 바꾼다 — 설정 키를 지어내지 말고, 확실하지 않으면 설치된 패키지의 타입 정의(`node_modules/<pkg>/**/*.d.ts`)나 문서로 확인한다.
 
 ## Vite 계열 (Vite, React/Vue/Svelte + Vite, SvelteKit, SolidStart, React Router v7/Remix-vite, Qwik, Storybook-vite)
 `vite.config.*`:
