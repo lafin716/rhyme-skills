@@ -1,6 +1,6 @@
 ---
 name: rhymework
-description: Autonomously scope and deliver software build requests, including /rhymework in Claude Code. Infer planning, PROGRESS.md, task dependencies, model routing, parallel agents and target validation from the requested outcome and repository, even when the user only says build it. Preserves UI verification and lightweight small edits.
+description: Autonomously scope and deliver software build requests, including /rhymework (Claude Code) or $rhymework (Codex). Infer planning, PROGRESS.md, task dependencies, model routing, parallel agents and target validation from the requested outcome and repository, even when the user only says build it. Preserves UI verification and lightweight small edits.
 ---
 
 # Rhymework
@@ -9,7 +9,7 @@ description: Autonomously scope and deliver software build requests, including /
 
 ## Claude Code 실행 환경
 
-이 설치본은 Claude Code의 개인 스킬이다. 아래 항목은 본문과 참고 문서의 Codex/OMX 전용 실행 지침을 Claude Code에 대응시키며, 사용자의 범위·승인·프로젝트 지침을 바꾸지 않는다.
+Claude Code에서 실행할 때만 적용한다(Codex에서는 이 절을 건너뛴다). 아래 항목은 본문과 참고 문서의 Codex/OMX 전용 실행 지침을 Claude Code에 대응시키며, 사용자의 범위·승인·프로젝트 지침을 바꾸지 않는다.
 
 - `/rhymework <작업>`으로 호출한다. 전달된 작업 인자를 사용하며, 인자가 없으면 아래 호출 규칙을 따른다.
 - 먼저 적용되는 `CLAUDE.md`와 프로젝트가 지정한 `AGENTS.md`를 확인한다. 개인 스킬의 참고 경로는 이 `SKILL.md`가 있는 디렉터리를 기준으로 해석한다.
@@ -21,7 +21,7 @@ description: Autonomously scope and deliver software build requests, including /
 
 ## 호출과 경계
 
-- Claude Code에서 `/rhymework <작업>`으로 호출한 요청을 해석한다. `$rhymework` 표기는 다른 환경에서 전달된 작업 요청으로만 해석한다.
+- Claude Code의 `/rhymework <작업>`, Codex의 `$rhymework <작업>`, 메시지로 전달된 같은 표기를 작업 요청으로 해석한다. 임의 슬래시 명령을 등록한다고 주장하지 않는다.
 - 인자가 없으면 현재 미완료 목표를 사용하고, 목표도 없으면 한 번만 간결히 묻는다.
 - 계획만 요청하면 계획에서 끝낸다. 채팅만 요청하면 파일을 만들지 않는다. 구현까지 요청했다면 계획 후 승인된 범위에서 계속 실행한다.
 - 적용되는 AGENTS.md, 사용자 범위, 기존 변경·저장 데이터·공개 인터페이스를 보존한다. 기존 커밋·배포 정책을 따르며 요청 범위를 확대하지 않는다.

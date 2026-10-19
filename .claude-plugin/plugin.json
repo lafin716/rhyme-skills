@@ -1,6 +1,6 @@
 {
   "name": "rhyme-skills",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "lafin716's agent skills: autonomous build orchestration (rhymework), commit & push (upload-git), release automation (make-release) and screenshot sharing links (show-link).",
   "author": {
     "name": "lafin716",
