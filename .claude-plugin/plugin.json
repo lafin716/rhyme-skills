@@ -1,7 +1,7 @@
 {
   "name": "rhyme-skills",
-  "version": "0.3.1",
-  "description": "lafin716's agent skills: autonomous build orchestration (rhymework), commit & push (upload-git), release automation (make-release), screenshot sharing links (show-link) and Tailscale dev-server access (show-dev).",
+  "version": "0.4.0",
+  "description": "lafin716's agent skills: autonomous build orchestration (rhymework), commit & push (upload-git), release automation (make-release), screenshot sharing links (show-link) Tailscale dev-server access (show-dev) and release-then-dev-server (release-show).",
   "author": {
     "name": "lafin716",
     "url": "https://github.com/lafin716"
@@ -24,6 +24,7 @@
     "./skills/upload-git",
     "./skills/make-release",
     "./skills/show-link",
-    "./skills/show-dev"
+    "./skills/show-dev",
+    "./skills/release-show"
   ]
 }

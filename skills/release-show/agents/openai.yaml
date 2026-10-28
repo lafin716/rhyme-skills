@@ -1,0 +1,4 @@
+interface:
+  display_name: "release-show"
+  short_description: "릴리즈를 공개한 뒤 개발 서버를 Tailscale 주소로 열기"
+  default_prompt: "$release-show 남은 수정사항을 커밋·검증하고 버전을 올려 릴리즈를 공개한 다음, 개발 서버를 휴대폰·다른 기기에서 접속할 수 있게 Tailscale 주소로 열어줘."
