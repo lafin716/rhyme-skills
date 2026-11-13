@@ -1,0 +1,4 @@
+interface:
+  display_name: "task-queue"
+  short_description: "할 일을 QUEUE.md에 적고 필요하면 사전 조사 자료 준비"
+  default_prompt: "$task-queue 이 작업을 바로 구현하지 말고 QUEUE.md 작업 큐에 적어 둬. 나중에 빨리 처리하는 데 도움이 되면 관련 파일·원인 후보·참고 자료를 .queue 폴더에 미리 준비해 줘."

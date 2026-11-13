@@ -1,0 +1,4 @@
+interface:
+  display_name: "task-run"
+  short_description: "QUEUE.md에 쌓인 작업을 한 번에 구현하고 큐 비우기"
+  default_prompt: "$task-run QUEUE.md에 모아 둔 작업을 전부 구현하고 검증한 뒤, 끝난 항목과 준비 자료를 큐에서 지워 줘. 실패한 항목은 이유를 남겨 줘."

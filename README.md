@@ -12,6 +12,8 @@
 | [show-link](skills/show-link/SKILL.md) | 스크린샷·파일을 갤러리로 띄워 localhost·LAN·Tailscale 링크로 공유 (`/show-link`, macOS·Linux, `python3` 필요) |
 | [show-dev](skills/show-dev/SKILL.md) | 개발 서버를 0.0.0.0에 바로 띄워 LAN·Tailscale(`*.ts.net`·100.x) 주소로 열기 — 허용 호스트 설정 자동 추가 (`/show-dev`, macOS·Linux) |
 | [release-show](skills/release-show/SKILL.md) | make-release로 릴리즈를 공개한 뒤 이어서 show-dev로 개발 서버를 LAN·Tailscale 주소로 열기 (`/release-show [버전] [-- show-dev 인자]`) |
+| [task-queue](skills/task-queue/SKILL.md) | 기능·버그 수정 등 할 일을 바로 구현하지 않고 `QUEUE.md`에 적어 두기 — 도움이 되면 관련 파일·원인 후보·참고 자료를 `.queue/<ID>/`에 미리 준비 (`/task-queue <작업>`) |
+| [task-run](skills/task-run/SKILL.md) | `QUEUE.md`에 모아 둔 작업을 한 번에 구현·검증하고 끝난 항목과 준비 자료를 지워 큐 비우기 — 실패 항목은 이유와 함께 남김 (`/task-run [ID…]`) |
 
 ## 설치
 
@@ -48,7 +50,7 @@ npx skills@latest add lafin716/rhyme-skills -a <agent>  # claude-code, cursor, o
 업데이트:
 
 ```bash
-npx skills@latest update -g upload-git show-link show-dev make-release release-show rhymework  # 이 저장소 스킬만
+npx skills@latest update -g upload-git show-link show-dev make-release release-show rhymework task-queue task-run  # 이 저장소 스킬만
 npx skills@latest update -g                                               # 전역 스킬 전부
 ```
 
